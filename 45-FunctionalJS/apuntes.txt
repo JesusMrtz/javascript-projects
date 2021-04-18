@@ -1,0 +1,22 @@
+First class function: 
+    - Es poder crear funciones que parezcan cualquier variable como lo es una function expression
+
+
+Las funciones puras:
+    - Son funciones que retornan un dato pero no modifican los valores de la variable (retornan un dato nuevo)
+    - Con una entrada de datos, debe retornan la misma cantidad de datos que recibe en la entrada (ve 06-app.js)
+
+
+Clousures 
+    - Viene acompañado con el scope, permite acceder a una propiedad de una funcion desde el exterior
+
+
+Partials and Curryng
+
+    - Curryng va a dividir la función por partes
+    - Dividir una funcion que mas de un parametro en argumentos de forma parcial
+
+
+Composition 
+    - Es una alternativa a las clases
+    - SE utiliza cuando se tiene funciones que se puede compartir entre objetos

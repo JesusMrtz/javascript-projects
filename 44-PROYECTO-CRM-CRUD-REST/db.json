@@ -1,0 +1,25 @@
+{
+  "clientes": [
+    {
+      "id": 27,
+      "nombre": "Jesus Alejandro",
+      "email": "jesusmrtztorres@gmail.com",
+      "telefono": "(999) 605-4406",
+      "empresa": "Bolsa rosa2"
+    },
+    {
+      "nombre": "Alejandra",
+      "email": "alejandra@correo.com",
+      "telefono": "9910203034",
+      "empresa": "Fantasma",
+      "id": 28
+    },
+    {
+      "nombre": "JESUS",
+      "email": "jesusmrtztorres@gmail.com",
+      "telefono": "(999) 605-4406",
+      "empresa": "",
+      "id": 29
+    }
+  ]
+}

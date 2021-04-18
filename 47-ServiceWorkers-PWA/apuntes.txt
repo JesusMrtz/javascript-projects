@@ -1,0 +1,23 @@
+PWA 
+    - SON RAPIDAS, cargan la información en menos de 5 segundos
+    - Soporte ofline 
+    - instalables en desktop o telefono
+
+Service Worker 
+    - No funcionan sobre el dom
+    - Es la base de un PWA
+    - Funcionan ofline 
+    - Cargan de forma instantanea
+    - Sincronizan datos detrás de escena o sin interferir la información
+
+
+Funciones no disponibles en Service Worker 
+    - window (se utiliza self)
+    - document (se utiliza cache)
+    - localStorage (se utiliza fetch)
+
+
+PAra poder instalar un PWA 
+    - UN MAIFEST VÁLIDO
+    - DOMINIO HTTPS O LOCALHOST
+   - Registrado el eventlistener de fetch 

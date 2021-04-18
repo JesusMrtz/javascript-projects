@@ -1,0 +1,35 @@
+Scope.
+    - Es el alcance de una variable
+
+
+Hoisting. 
+    - Como funcionan los contextos de ejecucuiión de JavaScript
+    - Primero registra las funciones (functions declarations) y después la ejecuta
+    - Primera etapa se registran las funciones y en la segunda etapa las ejecuta
+    - Cuidado con las fuctions espressions
+
+
+
+Coercion 
+    - Es la conversión automatica ya sea explicita o implicita de valores de un tipo dado a otro 
+
+
+implicit binding 
+    - Se le dice en que parte buscara los valores del objeto utilizando la palabra this (ver archivo 04-app.js)
+
+
+Explicit binding
+    -SE utiliza tres fuciones:
+        - call - Existe en todas las funciones de JS (incluso en la que nosotros creamos) pero tienes que pasarle el elemento de forma individual
+       
+        - apply - Existe en todas las funciones de JS (incluso en la que nosotros creamos) pero se puede pasar un objeto de valores
+       
+        - bind - Similar a call pero te crea una nueva funcion
+
+
+El loop de enventos 
+    - se ejecutan los eventos dependiendo el nivel de prioridad
+
+
+self
+    - Se utiliza en los service worker ya que no existe window

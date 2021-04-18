@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Técnico</title>
+    <style>
+        div {
+            text-align: center;
+            padding: 4px;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            color: white;
+        }
+        button {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            cursor: pointer;
+        }
+        .bg-blue{
+            background-color: blue;
+        }
+        .bg-red {
+            background-color: red;
+        }
+
+        .bg-green {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="bg-blue">Div 1</div>
+        <div class="bg-red">Div 2</div>
+        <div class="bg-green">Div 3</div>
+    </section>
+    <button>Cambiar color</button>
+    <script>
+        const button = document.querySelector('button');
+        const divs = document.querySelectorAll('div');
+        let auxSaveClass;
+        
+        button.addEventListener('click', () => {
+            divs.forEach((div, index) =>  {
+                let saveClass = div.className;
+
+                if (auxSaveClass) {
+                    saveClass = auxSaveClass;
+                }
+
+                if ((index + 1) === divs.length) {
+                    divs[0].className = saveClass;
+                } else {
+                    auxSaveClass = div.nextElementSibling.className;
+                    div.nextElementSibling.className = saveClass;
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "53-webpack-eslint",
+  "version": "1.0.0",
+  "description": "Aprediendo Webpack, babel y esLint",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "babel entrada.js --out-file salida.js --presets=@babel/preset-env",
+    "webpack": "concurrently --kill-others \"npm run watch\" \"webpack serve\"",
+    "dev": "webpack serve",
+    "watch": "webpack --watch"
+  },
+  "author": "Jesús Martínez",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "babel-loader": "^8.2.2",
+    "concurrently": "^6.0.0",
+    "eslint": "^7.23.0",
+    "webpack": "^5.30.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
